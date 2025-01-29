@@ -20,7 +20,7 @@ Transmission::Transmission() : finalDriveRatio{4.2}, gear_index{1}{
 }
 
 void Transmission::shiftUp(){
-    if (gear_index < static_cast<int>(gears.size()) - 1) {
+    if (gear_index < (gears.size()) - 1) {
         gear_index++;
     } else {
         throw std::runtime_error("Cannot shift up: already in the highest gear!");

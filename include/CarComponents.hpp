@@ -18,7 +18,7 @@ struct Gear{
 class Transmission{
     private:
         std::vector<Gear> gears;
-        int gear_index;
+        size_t gear_index;
         const double finalDriveRatio;
     public:
         Transmission();

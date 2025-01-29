@@ -11,8 +11,8 @@ void Car::shiftGearDown() { transmission.shiftDown(); }
 void Car::update(double throttle, double brake, float dt){
     if(brake!=0){
         engine.setRPM(0);
-        if(speed > 0) {  acceleration = -brake*25; speed += acceleration*dt; }
-        else if(speed < -0.5) { acceleration = brake*25; speed += acceleration*dt; } 
+        if(speed > 0) {  acceleration = -brake*30; speed += acceleration*dt; }
+        else if(speed < -0.5) { acceleration = brake*30; speed += acceleration*dt; } 
         else { speed = 0.0; acceleration = 0.0; }
     } else if(engine.isSeized() || fuel_system.getFuelLevel() <= 0 || 
         !engine.isEngineRunning()){
