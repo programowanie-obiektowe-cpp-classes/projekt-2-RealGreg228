@@ -11,12 +11,12 @@ Gear::Gear(int num, double ratio) : gear_number{num}, ratio{ratio} {}
 // Skrzynia biegów
 Transmission::Transmission() : finalDriveRatio{4.2}, gear_index{1}{
     gears.emplace_back(-1, -3.3); // Wsteczny
-    gears.emplace_back(0, 0.0);  // Luz
-    gears.emplace_back(1, 3.3);  // Pierwszy bieg
-    gears.emplace_back(2, 2.1);  // Drugi bieg
-    gears.emplace_back(3, 1.5);  // Trzeci bieg
-    gears.emplace_back(4, 1.0);  // Czwarty bieg
-    gears.emplace_back(5, 0.5);  // Piąty bieg
+    gears.emplace_back(0, 0.0);   // Luz
+    gears.emplace_back(1, 3.3);   // Pierwszy bieg
+    gears.emplace_back(2, 2.1);   // Drugi bieg
+    gears.emplace_back(3, 1.5);   // Trzeci bieg
+    gears.emplace_back(4, 1.0);   // Czwarty bieg
+    gears.emplace_back(5, 0.5);   // Piąty bieg
 }
 
 void Transmission::shiftUp(){

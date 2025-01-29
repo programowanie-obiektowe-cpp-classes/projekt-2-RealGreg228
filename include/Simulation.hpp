@@ -7,7 +7,6 @@
 class Simulation{
     private:
         Car car;
-        bool is_running;
         float throttle;
         float brake;
         float fuel_to_add;

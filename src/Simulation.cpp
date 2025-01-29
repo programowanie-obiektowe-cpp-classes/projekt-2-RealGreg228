@@ -4,7 +4,7 @@
 #include <thread>
 #include <vector>
 
-Simulation::Simulation() : is_running(true), throttle{0.0f}, fuel_to_add{0.0f},
+Simulation::Simulation() : throttle{0.0f}, fuel_to_add{0.0f},
         oil_to_add{0.0f}, brake{0.0f} {}
 
 void Simulation::addError(const std::string& message, float duration, int id){

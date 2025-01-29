@@ -35,8 +35,8 @@ void Car::update(double throttle, double brake, float dt){
         acceleration = net_force/mass;
         speed += acceleration*dt;
 
-        fuel_system.consumeFuel(std::abs(speed*dt / 3600));
-        engine.consumeOil(std::abs(speed*dt / 3600));
+        fuel_system.consumeFuel(std::abs(speed*dt / 360));
+        engine.consumeOil(std::abs(speed*dt / 360));
     }
 
     updateDistanceTraveled(dt);
